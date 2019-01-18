@@ -1,6 +1,7 @@
 #include <windows.h>
 #include <stdint.h>
 
+
 #define internal static
 #define local_persist static
 #define global_variable static
@@ -22,6 +23,9 @@ typedef float real32;
 typedef double real64;
 
 global_variable bool GlobalRunning;
+
+
+#include "../../Shared/WinSockets.cpp"
 
 internal LRESULT CALLBACK Win32MainWindowCallback(
     HWND Window,
